@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Геоинформационная система</title>
+		<link rel="stylesheet" type="text/css" href="leaflet.css"/>
+		<link rel="stylesheet" type="text/css" href="leaflet.draw.css"/>
+			<link rel="stylesheet" href="MarkerCluster.css" />	
+	<link rel="stylesheet" href="Leaflet.Photo.css" />	
+
+		<meta charset="UTF-8" />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+		<script type="text/javascript" src="leaflet.js"></script>
+		<script type="text/javascript"  src="jquery.js"></script>
+		<script type="text/javascript"  src="leaflet.draw.js"></script>
+		<script type="text/javascript" src="leaflet.mouseCoordinate.js"></script>
+
+	<script src="leaflet.markercluster-src.js"></script>	
+	<script src="Leaflet.Photo.js"></script>	
+
+
+		<style>
+body {
+	margin: 0;
+	padding: 0;
+}
+	#map {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 98;
+	}
+	#export {
+		position: absolute;
+		top:50px;
+		right:10px;
+		z-index: 99;
+		background:white;
+		color:black;
+		padding:6px;
+		border-radius:4px;
+		font-family: 'Helvetica Neue';
+		cursor: pointer;
+		font-size:12px;
+		text-decoration:none;
+	}
+	#export {
+		top:110px;
+	}
+		#upload {
+		position: absolute;
+		top:140px;
+		right:10px;
+		z-index: 99;
+		background:white;
+		color:black;
+		padding:6px;
+		border-radius:4px;
+		font-family: 'Helvetica Neue';
+		cursor: pointer;
+		font-size:12px;
+		text-decoration:none;
+	}
+	.circle {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background-image: url('circle.png');
+    text-align: center;
+}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="map"></div>
+		<a href='#' id='export'>Сохранить слой</a>
+		<a href='upload.html' id='upload'>Загрузка снимков</a>
+
+
+	</body>
+	<script type="text/javascript" src="json.js"></script>
+</html>
+
